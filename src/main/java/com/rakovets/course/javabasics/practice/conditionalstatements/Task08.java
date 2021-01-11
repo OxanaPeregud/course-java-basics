@@ -41,21 +41,15 @@ public class Task08 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
 
-        int totalDamageSAINT = damage / 2;
-        int totalDamageUNDEADorZOMBIE = damage + damage / 2;
-
-        if (hasHolyAttribute == true) {
-            if (typeMob == "SAINT") {
-                return (totalDamageSAINT);
-            } else if (typeMob == "UNDEAD" || typeMob == "ZOMBIE") {
-                return (totalDamageUNDEADorZOMBIE);
-            } else if (typeMob == "ANIMAL" || typeMob == "HUMANOID" || typeMob == "PLANT" || typeMob == "GHOST") {
-                return (damage);
-            } else {
-                return 0;
+        if (hasHolyAttribute) {
+            switch (typeMob) {
+                case "SAINT":
+                    return damage / 2;
+                case "UNDEAD":
+                case "ZOMBIE":
+                    return damage + damage / 2;
             }
-        } else {
-            return 0;
         }
+        return damage;
     }
 }
