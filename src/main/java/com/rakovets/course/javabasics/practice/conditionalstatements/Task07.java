@@ -37,15 +37,7 @@ public class Task07 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
 
-        double leapYear = year / 4;
 
-        if (year % 400 == 0) {
-            return false;
-        } else if (year % leapYear == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (year % 400 != 0) && (year % 4 == 0);
     }
 }
-
