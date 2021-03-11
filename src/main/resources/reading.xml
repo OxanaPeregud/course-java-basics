@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+    <student id="1">
+        <lastName>Brown</lastName>
+        <firstName>Dan</firstName>
+        <fee>100</fee>
+    </student>
+    <student id="2">
+        <lastName>White</lastName>
+        <firstName>Bob</firstName>
+        <fee>200</fee>
+    </student>
+    <student id="3">
+        <lastName>Black</lastName>
+        <firstName>John</firstName>
+        <fee>150</fee>
+    </student>
+</group>
